@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMS Disclosure — AVARA Holdings</title>
+<meta name="description" content="SMS opt-in disclosure and program details for the AVARA Holdings internal notification system.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0a;
+  color: #e8e8e8;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: #d4a94b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+nav {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: #d4a94b;
+}
+.nav-contact {
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+.hero {
+  padding: 80px 0 40px;
+}
+.hero h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #fff;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.hero .subtitle {
+  color: #d4a94b;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: #d4a94b;
+  margin: 32px 0;
+}
+
+main {
+  padding: 24px 0 80px;
+}
+section.block {
+  margin-bottom: 48px;
+}
+section.block h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #d4a94b;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+section.block p {
+  color: #c8c8c8;
+  margin-bottom: 12px;
+}
+section.block ul {
+  list-style: none;
+  padding-left: 0;
+}
+section.block li {
+  color: #c8c8c8;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+section.block li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #d4a94b;
+}
+.sample-message {
+  background: rgba(255,255,255,0.03);
+  border-left: 2px solid #d4a94b;
+  padding: 14px 20px;
+  margin: 12px 0;
+  font-family: "SF Mono", "Monaco", "Menlo", monospace;
+  font-size: 0.85rem;
+  color: #b8b8b8;
+  border-radius: 0 4px 4px 0;
+}
+.kicker {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+  color: #555;
+  font-size: 0.8rem;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/"><div class="logo">AVARA</div></a>
+    <div class="nav-contact">Omaha, NE</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="subtitle">Compliance Notice</div>
+    <h1>SMS Notification Program</h1>
+    <div class="divider"></div>
+    <p>This page describes the SMS notification system operated by AVARA Holdings. It exists for compliance verification with U.S. wireless carriers and Twilio's A2P 10DLC registration program.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="block">
+      <h2>Program Description</h2>
+      <p>AVARA Holdings operates a private, single-user internal business notification system. The sole recipient is the account owner, Ryan Miller, who is also the founder and operator of AVARA Holdings. No other end users receive messages. No marketing, promotional, or third-party messages are ever sent through this number.</p>
+      <p>Messages are sent on demand or on a fixed schedule, and contain operational data the owner has explicitly configured the system to deliver to himself: accounts receivable summaries, team utilization reports, scheduled reminders, and ad hoc system status updates.</p>
+    </section>
+
+    <section class="block">
+      <h2>Sample Messages</h2>
+      <div class="sample-message">AR Report (as of 2026-04-19): Total Outstanding $179,631.62. Top balance: BHI Companies $47,288.50. 60+ days overdue: 3 invoices.</div>
+      <div class="sample-message">Inbox digest 7am CT: 4 emails awaiting decision. JR Woltemath replied on tax question. Earl SOD report logged.</div>
+      <div class="sample-message">Crew utilization Tue: 67% real, 6 techs in field, $4,820 billable revenue. No flags.</div>
+    </section>
+
+    <section class="block">
+      <h2>How Opt-In Occurred</h2>
+      <p>The account owner is the only recipient. Opt-in occurred when the owner provisioned this Twilio number on his own Twilio account, registered his personal mobile phone number as the sole destination address inside the system's configuration files, and enabled the notification flag himself. There is no public sign-up form because there are no other recipients.</p>
+      <p>Express written consent is on file in the form of the system's environment configuration, which is owned, edited, and maintained exclusively by Ryan Miller.</p>
+    </section>
+
+    <section class="block">
+      <h2>Message Frequency</h2>
+      <p>Low volume. Approximately 10 to 60 messages per month, varying with operational events. Most days zero messages are sent.</p>
+    </section>
+
+    <section class="block">
+      <h2>Opt-Out and Help</h2>
+      <ul>
+        <li>Reply <strong>STOP</strong>, STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, or REVOKE to opt out of all future messages.</li>
+        <li>Reply <strong>HELP</strong> or INFO to receive program information.</li>
+        <li>Standard message and data rates may apply, charged by your wireless carrier.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2>Privacy</h2>
+      <p>No phone numbers, message content, or personal data are sold, shared, or transferred to any third party for any purpose. The only parties with access to message content are AVARA Holdings (the sender) and the recipient's wireless carrier (for delivery).</p>
+      <p class="kicker">Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.</p>
+    </section>
+
+    <section class="block">
+      <h2>Contact</h2>
+      <p>Questions about this SMS program: <a href="mailto:info@avarainvestments.com">info@avarainvestments.com</a></p>
+      <p>AVARA Holdings &middot; Omaha, Nebraska</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 AVARA Holdings &middot; <a href="/">Home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
