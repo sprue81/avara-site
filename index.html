@@ -3,311 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AVARA Holdings — Business Acquisition & Real Estate Investment</title>
-<meta name="description" content="AVARA Holdings is a holding company focused on business acquisition and real estate investment based in Omaha, Nebraska. Founded by Ryan Miller.">
+<title>AVARA Investments — Business Acquisition & Real Estate Investment</title>
+<meta name="description" content="AVARA Investments buys cash-flowing businesses, reinvests in real estate, and builds generational wealth. Founded by Ryan Miller in Omaha, Nebraska.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0a0a0a;
-  color: #e8e8e8;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-a { color: inherit; text-decoration: none; }
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* NAV */
-nav {
-  padding: 32px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.35em;
-  color: #d4a94b;
-}
-.nav-contact {
-  font-size: 0.8rem;
-  color: #888;
-  letter-spacing: 0.05em;
-}
-
-/* HERO */
-.hero {
-  padding: 100px 0 80px;
-  text-align: center;
-}
-.hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  color: #fff;
-  margin-bottom: 32px;
-}
-.mission {
-  font-size: clamp(0.85rem, 2vw, 1rem);
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: #d4a94b;
-  text-transform: uppercase;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-/* DIVIDER */
-.divider {
-  width: 60px;
-  height: 1px;
-  background: #d4a94b;
-  margin: 0 auto;
-}
-
-/* QUOTE */
-.quote-section {
-  padding: 80px 0;
-  text-align: center;
-}
-.quote-section blockquote {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  font-weight: 300;
-  font-style: italic;
-  color: #ccc;
-  max-width: 720px;
-  margin: 0 auto 24px;
-  line-height: 1.8;
-}
-.quote-section cite {
-  font-size: 0.85rem;
-  font-style: normal;
-  color: #888;
-  letter-spacing: 0.08em;
-}
-
-/* ABOUT */
-.about-section {
-  padding: 80px 0;
-}
-.about-section h2 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #d4a94b;
-  margin-bottom: 32px;
-  text-align: center;
-}
-.about-text {
-  font-size: 1.05rem;
-  font-weight: 300;
-  color: #bbb;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.9;
-}
-
-/* PLAYBOOK CARD */
-.playbook-section {
-  padding: 60px 0 80px;
-}
-.playbook-card {
-  display: block;
-  background: linear-gradient(135deg, #141414 0%, #1a1a1a 100%);
-  border: 1px solid rgba(212, 169, 75, 0.25);
-  border-radius: 12px;
-  padding: 48px 40px;
-  text-align: center;
-  transition: border-color 0.3s ease, transform 0.2s ease;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.playbook-card:hover {
-  border-color: rgba(212, 169, 75, 0.5);
-  transform: translateY(-2px);
-}
-.playbook-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #d4a94b;
-  margin-bottom: 16px;
-}
-.playbook-card h3 {
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 16px;
-}
-.playbook-card p {
-  font-size: 0.95rem;
-  color: #999;
-  margin-bottom: 28px;
-  line-height: 1.7;
-}
-.playbook-btn {
-  display: inline-block;
-  background: #d4a94b;
-  color: #0a0a0a;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 14px 36px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-.playbook-btn:hover {
-  background: #e0b85c;
-}
-
-/* SOCIAL */
-.social-section {
-  padding: 60px 0;
-  text-align: center;
-}
-.social-section h2 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #d4a94b;
-  margin-bottom: 32px;
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 50%;
-  transition: border-color 0.3s ease, background 0.3s ease;
-}
-.social-link:hover {
-  border-color: #d4a94b;
-  background: rgba(212, 169, 75, 0.08);
-}
-.social-link svg {
-  width: 20px;
-  height: 20px;
-  fill: #999;
-  transition: fill 0.3s ease;
-}
-.social-link:hover svg {
-  fill: #d4a94b;
-}
-
-/* CONTACT */
-.contact-section {
-  padding: 60px 0;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.contact-section a {
-  color: #d4a94b;
-  transition: color 0.3s ease;
-}
-.contact-section a:hover {
-  color: #e0b85c;
-}
-.contact-email {
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-.contact-location {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-/* FOOTER */
-footer {
-  padding: 40px 0;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-footer p {
-  font-size: 0.75rem;
-  color: #555;
-  letter-spacing: 0.1em;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
 <nav>
   <div class="container">
-    <div class="logo">AVARA HOLDINGS</div>
-    <div class="nav-contact">Omaha, NE</div>
+    <a href="/" class="logo"><img src="assets/avara-logo-light.png" alt="AVARA Investments"></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#playbooks">Playbooks</a>
+      <a href="#connect">Connect</a>
+      <a href="#playbooks" class="nav-cta">Get the Playbooks</a>
+    </div>
   </div>
 </nav>
 
 <section class="hero">
   <div class="container">
-    <h1>AVARA HOLDINGS</h1>
+    <p class="eyebrow">Business Acquisition &nbsp;·&nbsp; Real Estate &nbsp;·&nbsp; Generational Wealth</p>
+    <h1>Make it. Keep it.<br><span class="accent">Multiply it.</span></h1>
     <p class="mission">Enriching the quality of life of our family, friends, and community</p>
+    <div class="hero-cta">
+      <a href="#playbooks" class="btn">Get the Playbooks</a>
+      <a href="#approach" class="btn btn-ghost">How We Think</a>
+    </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<section class="quote-section">
+<section class="band">
   <div class="container">
-    <blockquote>
-      &ldquo;Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, and managed with reasonable care, it is about the safest investment in the world.&rdquo;
-    </blockquote>
-    <cite>&mdash; Franklin D. Roosevelt</cite>
+    <div class="quotes">
+      <div class="quote">
+        <div class="tag">On Real Estate</div>
+        <blockquote>&ldquo;Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, and managed with reasonable care, it is about the safest investment in the world.&rdquo;</blockquote>
+        <cite>&mdash; Franklin D. Roosevelt</cite>
+      </div>
+      <div class="quote">
+        <div class="tag">On Business</div>
+        <blockquote>&ldquo;It&rsquo;s far better to buy a wonderful company at a fair price than a fair company at a wonderful price.&rdquo;</blockquote>
+        <cite>&mdash; Warren Buffett</cite>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<section class="about-section">
+<section class="band" id="about">
   <div class="container">
-    <h2>About</h2>
-    <p class="about-text">
-      Ryan Miller is the founder of AVARA Holdings, a holding company focused on business acquisition and real estate investment based in Omaha, Nebraska. A 20-year Air Force veteran and owner of McIntosh Plumbing, Ryan built AVARA Holdings to acquire and operate cash-flowing businesses and rental properties with a single mission: to build generational wealth.
-    </p>
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>From the Air Force to ownership</h2>
+    </div>
+    <div class="about-copy">
+      <p>I grew up in southwest Louisiana and joined the Air Force at 19. Twenty years in uniform taught me how to lead, how to make decisions without perfect information, and how to take responsibility when it actually matters.</p>
+      <p>The Air Force also brought me to Nebraska, where I met my wife. We're raising our three daughters here in Omaha. Everything I build, I build with them in mind.</p>
+      <p>After I retired, I spent about five years working for the government as a contractor while I built on the side. I got my start in real estate, buying and holding rental property. That's what opened my eyes to ownership.</p>
+      <p>From real estate I made my way into business. Instead of starting one from scratch and hoping it worked, I bought one that already did. A real company, with real customers and a real team.</p>
+      <p>Today I run my real estate and my business full time. Everything I build, I build to last. For my wife, our three daughters, and the people around us.</p>
+      <p class="sig">Ryan Miller &middot; Founder, AVARA Investments</p>
+    </div>
   </div>
 </section>
 
-<section class="playbook-section">
+<section class="band" id="approach">
   <div class="container">
-    <a href="https://playbook.avarainvestments.com" class="playbook-card">
-      <div class="playbook-label">New Release</div>
-      <h3>The Acquisition Playbook</h3>
-      <p>A step-by-step framework for buying your first cash-flowing business. From finding deals to owning the keys.</p>
-      <span class="playbook-btn">Learn More</span>
-    </a>
+    <div class="thesis">
+      <div>
+        <p class="eyebrow">The Approach</p>
+        <p class="lead-line">A business is the <span class="accent">cash engine.</span> Real estate is the <span class="accent">vault.</span></p>
+        <p>The strategy is simple. Buy a business that already makes money. Keep what it produces through a high savings rate. Then park that profit in real estate, where it compounds, shelters income from taxes, and keeps working long after the business does. One makes the money. The other keeps it, grows it, and passes it on.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><h4><span>01</span>Acquire</h4><p>Buy established, cash-flowing businesses. Skip the highest-failure part of the journey.</p></div>
+        <div class="pillar"><h4><span>02</span>Reinvest</h4><p>Move profit into buy-and-hold, value-add real estate. Long-term wealth, near-term tax benefit, real cash flow.</p></div>
+        <div class="pillar"><h4><span>03</span>Build</h4><p>Run lean with people, systems, and AI. Build something durable, paid for, and worth passing down.</p></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="social-section">
+<section class="band" id="playbooks">
   <div class="container">
-    <h2>Connect</h2>
+    <div class="section-head">
+      <p class="eyebrow">Free Playbooks</p>
+      <h2>The real-world guides I wish I&rsquo;d had</h2>
+      <p>No theory and no fluff. The frameworks I actually use to buy businesses, run them, and build wealth. Grab any of them free.</p>
+    </div>
+    <div class="magnets">
+      <a href="/freedom-playbook/" class="magnet">
+        <div class="kicker">Buy a Business</div>
+        <h3>The Freedom Playbook</h3>
+        <p>A real-world guide to buying a small business. From defining your buy box to underwriting a deal to your first 90 days as owner.</p>
+        <span class="get">Get it free <span class="arrow">&rarr;</span></span>
+      </a>
+      <a href="/systems-playbook/" class="magnet">
+        <div class="kicker">Run a Business</div>
+        <h3>The Systems Playbook</h3>
+        <p>How I run a real company with AI. The thinking behind the dashboards, bots, and automations that let a small shop out-operate a big one.</p>
+        <span class="get">Get it free <span class="arrow">&rarr;</span></span>
+      </a>
+      <a href="/cash-engine-and-the-vault/" class="magnet">
+        <div class="kicker">Build Wealth</div>
+        <h3>The Cash Engine &amp; the Vault</h3>
+        <p>My philosophy on business ownership with real estate, and why one without the other leaves money on the table.</p>
+        <span class="get">Get it free <span class="arrow">&rarr;</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="connect">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Connect</p>
+      <h2>Follow the build</h2>
+    </div>
     <div class="social-links">
       <a href="https://instagram.com/ryanlmillerinvests" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -325,19 +141,16 @@ footer p {
         <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       </a>
     </div>
-  </div>
-</section>
-
-<section class="contact-section">
-  <div class="container">
-    <p class="contact-email"><a href="mailto:info@avarainvestments.com">info@avarainvestments.com</a></p>
-    <p class="contact-location">Omaha, Nebraska</p>
+    <div class="contact" style="margin-top:48px">
+      <p class="email"><a href="mailto:info@avarainvestments.com">info@avarainvestments.com</a></p>
+      <p class="loc">Omaha, Nebraska</p>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>&copy; 2026 AVARA Holdings</p>
+    <p>&copy; 2026 AVARA Investments &nbsp;·&nbsp; <a href="/sms-disclosure/">SMS Disclosure</a></p>
   </div>
 </footer>
 
